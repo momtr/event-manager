@@ -1,0 +1,159 @@
+## this file creates several entities and links them
+### persons, contacts, locations, events, time slots, event roles, event participants
+
+POST http://localhost:8080/api/v1/persons
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Moritzzzz",
+  "lastName": "Mitterdorfer",
+  "titleFront": null,
+  "titleBlack": null,
+  "birthday": "2004/04/16",
+  "mainJob": "student",
+  "gender": "MALE",
+  "streetNumber": "Street 1",
+  "zipCode": "10000",
+  "city": "City",
+  "country": "Country"
+}
+
+> {%
+    client.global.set("person_token", response.body._token);
+    client.test('Should have created person', () => {
+        client.assert(response.status === 201);
+    })
+ %}
+###
+
+POST http://localhost:8080/api/v1/contacts/primary?person_token={{ person_token }}
+Content-Type: application/json
+Accept: application/json
+
+{
+  "contactType": "email",
+  "contactTypeIsSocialNetwork": true,
+  "address": "mitterdorfer.moritz@gmail.com",
+  "isBusiness": true
+}
+
+> {%
+    client.test('Should have created contact', () => {
+        client.assert(response.status === 201);
+    })
+%}
+###
+
+POST http://localhost:8080/api/v1/locations
+Content-Type: application/json
+
+{
+  "locationType": "INDOOR_LOCATION",
+  "squareMeters": 100,
+  "numOfToilets": 2,
+  "numOfBars": 2,
+  "maxDezibel": 50,
+  "numOfParkingPlaces": 10,
+  "opensAt": "15:40",
+  "endsAt": "23:00",
+  "name": "HTL Spengergasse",
+  "streetNumber": "Spengergasse 1",
+  "zipCode": "1050",
+  "city": "Wien",
+  "country": "Österreich",
+  "numOfFloors": 3,
+  "numOfEntrances": 1,
+  "numOfReceptions": 1,
+  "numOfRomms": 15,
+  "ownerToken": "{{ person_token }}"
+}
+
+> {%
+    client.global.set("location_token", response.body._token);
+    client.test('Should have created location', () => {
+        client.assert(response.status === 201);
+    })
+ %}
+###
+
+POST http://localhost:8080/api/v1/events
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Switch XXL",
+  "startDate": "2004/01/11",
+  "endDate": "2004/01/12",
+  "luxury": false,
+  "wasHold": false,
+  "eventType": "PARTY",
+  "organizerToken": "{{ person_token }}",
+  "locationToken": "{{ location_token }}",
+  "tagNames": ["epic", "free"]
+}
+
+> {%
+    client.global.set("event_token", response.body._token);
+    client.test('Should have created event', () => {
+        client.assert(response.status === 201);
+    })
+ %}
+###
+
+POST localhost:8080/api/v1/time-slots
+Content-Type: application/json
+Accept: application/json
+
+{
+  "from": "2022/01/01 20:00:00",
+  "to": "2022/01/01 20:30:00",
+  "name": "opening",
+  "description": "123",
+  "contactToken": "{{ person_token }}",
+  "eventToken": "{{ event_token }}"
+}
+
+> {%
+    client.global.set("time_slot_1_token", response.body._token);
+    client.test('Should have created time slot for event', () => {
+        client.assert(response.status === 201);
+    })
+ %}
+###
+
+POST http://localhost:8080/api/v1/roles
+Content-Type: application/json
+Accept: application/json
+
+{
+  "name": "Boss Head Manager 13"
+}
+
+> {%
+    client.global.set("event_role_slug", response.body._slug);
+    client.test('Should have created role', () => {
+        client.assert(response.status === 201);
+    })
+ %}
+###
+
+POST http://localhost:8080/api/v1/participants
+Content-Type: application/json
+Accept: application/json
+
+{
+  "eventToken": "{{ event_token }}",
+  "personToken": "{{ person_token }}",
+  "eventRoleSlug": "{{ event_role_slug }}",
+  "isPaid": true,
+  "isInternal": true
+}
+
+> {%
+    client.global.set("participants_token", response.body._token);
+    client.test('Should have created participant', () => {
+        client.assert(response.status === 201);
+    })
+ %}
+###

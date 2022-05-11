@@ -1,0 +1,48 @@
+POST http://localhost:8080/api/v1/persons
+Content-Type: application/json
+Accept: application/json
+
+{
+  "firstName": "Moritzzzz",
+  "lastName": "Mitterdorfer",
+  "titleFront": null,
+  "titleBlack": null,
+  "birthday": "2004/04/16",
+  "mainJob": "student",
+  "gender": "MALE",
+  "streetNumber": "Street 1",
+  "zipCode": "10000",
+  "city": "City",
+  "country": "Country"
+}
+###
+
+GET http://localhost:8080/api/v1/persons
+###
+
+GET http://localhost:8080/api/v1/persons/esb8Oo4X
+###
+
+PUT http://localhost:8080/api/v1/persons/esb8Oo4X
+Content-Type: application/json
+
+{
+  "firstName": "Moritz",
+  "lastName": "Mitterdorfer",
+  "titleFront": null,
+  "titleBlack": null,
+  "birthday": "2004/04/16",
+  "mainJob": "student",
+  "gender": "MALE",
+  "streetNumber": "Street 1",
+  "zipCode": "10000",
+  "city": "City",
+  "country": "Country"
+}
+###
+
+DELETE http://localhost:8080/api/v1/persons
+###
+
+DELETE http://localhost:8080/api/v1/persons/x6RAL58x
+###

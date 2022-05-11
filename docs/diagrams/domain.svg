@@ -1,0 +1,370 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" contentScriptType="application/ecmascript" contentStyleType="text/css" height="899px" preserveAspectRatio="none" style="width:838px;height:899px;background:#FFFFFF;" version="1.1" viewBox="0 0 838 899" width="838px" zoomAndPan="magnify"><defs><filter height="300%" id="f9ur0kov832ea" width="300%" x="-1" y="-1"><feGaussianBlur result="blurOut" stdDeviation="2.0"/><feColorMatrix in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"/><feOffset dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"/><feBlend in="SourceGraphic" in2="blurOut3" mode="normal"/></filter></defs><g><!--MD5=[ac13618b1a974308c1f12eb6c57723dc]
+class Event--><rect codeLine="3" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="200.1953" id="Event" style="stroke:#A80036;stroke-width:1.5;" width="123" x="195.5" y="456"/><ellipse cx="237.95" cy="472" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M236.45,473 L236.45,475 L240.45,475 L240.45,474 L240.45,473.5156 L241.075,473 L241.45,473 L241.825,473 L242.45,473.5156 L242.45,474 L242.45,477 L234.45,477 L233.9656,477 L233.45,476.375 L233.45,476 L233.45,475.625 L233.9656,475 L234.45,475 L234.45,475 L234.45,469 L234.45,469 L233.9656,469 L233.45,468.375 L233.45,468 L233.45,467.625 L233.9656,467 L234.45,467 L242.45,467 L242.45,470 L242.45,470.4844 L241.825,471 L241.45,471 L241.075,471 L240.45,470.4844 L240.45,470 L240.45,469 L236.45,469 L236.45,471 L237.45,471 L237.45,470.5156 L237.45,470.5156 L238.075,470 L238.45,470 L238.825,470 L239.45,470.5156 L239.45,471 L239.45,473 L239.45,473.4844 L238.825,474 L238.825,474 L238.45,474 L238.075,474 L237.45,473.4844 L237.45,473.4844 L237.45,473 L236.45,473 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="30" x="258.05" y="476.9102">Event</text><line style="stroke:#A80036;stroke-width:1.5;" x1="196.5" x2="317.5" y1="488" y2="488"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="201.5" y="503.4189">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="201.5" y="517.2549">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="201.5" y="531.0908">name : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="201.5" y="544.9268">startDate : LocalDate</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="201.5" y="558.7627">endDate : LocalDate</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="201.5" y="572.5986">eventType : EventType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="201.5" y="586.4346">wasHold : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="89" x="201.5" y="600.2705">organizer : Person</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="84" x="201.5" y="614.1064">location: Location</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="201.5" y="627.9424">agenda: List&lt;TimeSlot&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="201.5" y="641.7783">luxury : boolean</text><line style="stroke:#A80036;stroke-width:1.5;" x1="196.5" x2="317.5" y1="648.1953" y2="648.1953"/><!--MD5=[51255159981deef4d2967e1585ccf960]
+class EventType--><rect codeLine="17" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="89.5078" id="EventType" style="stroke:#A80036;stroke-width:1.5;" width="88" x="174" y="768.5"/><ellipse cx="189" cy="784.5" fill="#EB937F" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M187.5,785.5 L187.5,787.5 L191.5,787.5 L191.5,786.5 L191.5,786.0156 L192.125,785.5 L192.5,785.5 L192.875,785.5 L193.5,786.0156 L193.5,786.5 L193.5,789.5 L185.5,789.5 L185.0156,789.5 L184.5,788.875 L184.5,788.5 L184.5,788.125 L185.0156,787.5 L185.5,787.5 L185.5,787.5 L185.5,781.5 L185.5,781.5 L185.0156,781.5 L184.5,780.875 L184.5,780.5 L184.5,780.125 L185.0156,779.5 L185.5,779.5 L193.5,779.5 L193.5,782.5 L193.5,782.9844 L192.875,783.5 L192.5,783.5 L192.125,783.5 L191.5,782.9844 L191.5,782.5 L191.5,781.5 L187.5,781.5 L187.5,783.5 L188.5,783.5 L188.5,783.0156 L188.5,783.0156 L189.125,782.5 L189.5,782.5 L189.875,782.5 L190.5,783.0156 L190.5,783.5 L190.5,785.5 L190.5,785.9844 L189.875,786.5 L189.875,786.5 L189.5,786.5 L189.125,786.5 L188.5,785.9844 L188.5,785.9844 L188.5,785.5 L187.5,785.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="203" y="789.4102">EventType</text><line style="stroke:#A80036;stroke-width:1.5;" x1="175" x2="261" y1="800.5" y2="800.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="35" x="180" y="815.9189">PARTY</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="67" x="180" y="829.7549">CONFERENCE</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="27" x="180" y="843.5908">TALK</text><line style="stroke:#A80036;stroke-width:1.5;" x1="175" x2="261" y1="850.0078" y2="850.0078"/><!--MD5=[4f1f3706c1a355a8488e154afcaed5df]
+class Location--><rect codeLine="23" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="249.8906" id="Location" style="stroke:#A80036;stroke-width:1.5;" width="153" x="425.5" y="431"/><ellipse cx="474.25" cy="451.0938" fill="#A9DCDF" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M476,452.5938 L472.7031,452.5938 L472.2656,453.5938 L472.2656,453.5938 L472.7344,453.5938 L473.25,454.2188 L473.25,454.5938 L473.25,454.9688 L472.7344,455.5938 L472.2656,455.5938 L470.375,455.5938 L469.7656,455.5938 L469.25,454.9688 L469.25,454.5938 L469.25,454.2188 L469.7656,453.5938 L470.375,453.5938 L472.6875,447.5938 L471.8125,447.5938 L470.7656,447.5938 L470.25,446.9688 L470.25,446.5938 L470.25,446.2188 L470.7656,445.5938 L471.8125,445.5938 L475.4844,445.5938 L478.1719,453.5938 L478.7344,453.5938 L478.7344,453.5938 L479.25,454.2188 L479.25,454.5938 L479.25,454.9688 L478.7344,455.5938 L478.1719,455.5938 L476.2813,455.5938 L475.7656,455.5938 L475.25,454.9688 L475.25,454.5938 L475.25,454.2188 L475.7656,453.5938 L476.2813,453.5938 L476.2813,453.5938 L476,452.5938 Z M475.4531,450.5938 L474.25,447.0156 L473.2188,450.5938 L475.4531,450.5938 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="496.25" y="448.457">«Entity»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="47" x="494.75" y="463.5508">Location</text><line style="stroke:#A80036;stroke-width:1.5;" x1="426.5" x2="577.5" y1="471.1875" y2="471.1875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="431.5" y="486.6064">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="431.5" y="500.4424">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="431.5" y="514.2783">address : Address</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="431.5" y="528.1143">owner : Person</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="109" x="431.5" y="541.9502">squareMeters : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="94" x="431.5" y="555.7861">maxPeople : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="105" x="431.5" y="569.6221">numOfToilets : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="431.5" y="583.458">numOfBars : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="97" x="431.5" y="597.2939">maxDezibel : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="141" x="431.5" y="611.1299">numOfParkingPlaces : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="431.5" y="624.9658">opensAt : LocalTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="92" x="431.5" y="638.8018">endsAt : LocalTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="431.5" y="652.6377">description : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="431.5" y="666.4736">name : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="426.5" x2="577.5" y1="672.8906" y2="672.8906"/><!--MD5=[ae7830af301f2f367cca0d0cf3023502]
+class IndoorLocation--><rect codeLine="40" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="111.5313" id="IndoorLocation" style="stroke:#A80036;stroke-width:1.5;" width="140" x="629" y="757.5"/><ellipse cx="655.7" cy="777.5938" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M657.7,774.0938 Q657.9031,773.5938 658.1375,773.3438 Q658.3719,773.0938 658.6375,773.0938 Q659.1063,773.0938 659.4031,773.375 Q659.7,773.6563 659.7,774.3125 L659.7,775.875 Q659.7,776.5313 659.4188,776.8125 Q659.1375,777.0938 658.7,777.0938 Q658.3094,777.0938 658.0594,776.9219 Q657.8094,776.75 657.7,776.2969 Q657.6531,775.9844 657.4813,775.8125 Q657.1688,775.4844 656.6063,775.2969 Q656.0438,775.0938 655.4813,775.0938 Q654.7781,775.0938 654.1844,775.375 Q653.6063,775.6563 653.1531,776.2813 Q652.7,776.9063 652.7,777.7656 L652.7,778.6875 Q652.7,779.7188 653.5438,780.4063 Q654.3875,781.0938 655.8875,781.0938 Q656.7781,781.0938 657.4031,780.8906 Q657.7625,780.7813 658.1688,780.4219 Q658.4344,780.2188 658.575,780.1563 Q658.7156,780.0938 658.8875,780.0938 Q659.2156,780.0938 659.45,780.3594 Q659.7,780.6094 659.7,780.9688 Q659.7,781.3125 659.3563,781.7188 Q658.8563,782.3125 658.0594,782.6406 Q657.0125,783.0938 655.7313,783.0938 Q654.2313,783.0938 653.0281,782.5 Q652.0594,782.0313 651.3719,781.0156 Q650.7,780 650.7,778.7969 L650.7,777.7031 Q650.7,776.4531 651.2938,775.3594 Q651.9031,774.2656 652.95,773.6875 Q654.0125,773.0938 655.2,773.0938 Q655.9188,773.0938 656.5438,773.3438 Q657.1688,773.5938 657.7,774.0938 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="691.3" y="774.957">«Entity»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="82" x="672.3" y="790.0508">IndoorLocation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="630" x2="768" y1="797.6875" y2="797.6875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="104" x="635" y="813.1064">numOfFloors : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="123" x="635" y="826.9424">numOfEntrances : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="128" x="635" y="840.7783">numOfReceptions : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="107" x="635" y="854.6143">numOfRooms : Integer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="630" x2="768" y1="861.0313" y2="861.0313"/><!--MD5=[7a4aedc9dce9984ee81edb21a5895d01]
+class OutdoorLocation--><rect codeLine="47" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="125.3672" id="OutdoorLocation" style="stroke:#A80036;stroke-width:1.5;" width="148" x="446" y="751"/><ellipse cx="472.25" cy="771.0938" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M474.25,767.5938 Q474.4531,767.0938 474.6875,766.8438 Q474.9219,766.5938 475.1875,766.5938 Q475.6563,766.5938 475.9531,766.875 Q476.25,767.1563 476.25,767.8125 L476.25,769.375 Q476.25,770.0313 475.9688,770.3125 Q475.6875,770.5938 475.25,770.5938 Q474.8594,770.5938 474.6094,770.4219 Q474.3594,770.25 474.25,769.7969 Q474.2031,769.4844 474.0313,769.3125 Q473.7188,768.9844 473.1563,768.7969 Q472.5938,768.5938 472.0313,768.5938 Q471.3281,768.5938 470.7344,768.875 Q470.1563,769.1563 469.7031,769.7813 Q469.25,770.4063 469.25,771.2656 L469.25,772.1875 Q469.25,773.2188 470.0938,773.9063 Q470.9375,774.5938 472.4375,774.5938 Q473.3281,774.5938 473.9531,774.3906 Q474.3125,774.2813 474.7188,773.9219 Q474.9844,773.7188 475.125,773.6563 Q475.2656,773.5938 475.4375,773.5938 Q475.7656,773.5938 476,773.8594 Q476.25,774.1094 476.25,774.4688 Q476.25,774.8125 475.9063,775.2188 Q475.4063,775.8125 474.6094,776.1406 Q473.5625,776.5938 472.2813,776.5938 Q470.7813,776.5938 469.5781,776 Q468.6094,775.5313 467.9219,774.5156 Q467.25,773.5 467.25,772.2969 L467.25,771.2031 Q467.25,769.9531 467.8438,768.8594 Q468.4531,767.7656 469.5,767.1875 Q470.5625,766.5938 471.75,766.5938 Q472.4688,766.5938 473.0938,766.8438 Q473.7188,767.0938 474.25,767.5938 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="512.25" y="768.457">«Entity»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="91" x="488.75" y="783.5508">OutdoorLocation</text><line style="stroke:#A80036;stroke-width:1.5;" x1="447" x2="593" y1="791.1875" y2="791.1875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="111" x="452" y="806.6064">weatherSafe : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="85" x="452" y="820.4424">hasPool : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="136" x="452" y="834.2783">hasCampFirePlace : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="132" x="452" y="848.1143">hasOutdoorStage : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="106" x="452" y="861.9502">numOfPlaces : Integer</text><line style="stroke:#A80036;stroke-width:1.5;" x1="447" x2="593" y1="868.3672" y2="868.3672"/><!--MD5=[0f39e4cb6f03951afbf6d14bd2505654]
+class Address--><rect codeLine="56" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="111.5313" id="Address" style="stroke:#A80036;stroke-width:1.5;" width="114" x="614" y="500"/><ellipse cx="630.8" cy="520.0938" fill="#FF7700" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M630.8,523.375 L632.3313,517.8438 L632.3313,517.8438 L631.8156,517.8438 L631.3,517.2188 L631.3,516.8438 L631.3,516.4688 L631.8156,515.8438 L632.3313,515.8438 L634.2063,515.8438 L634.7844,515.8438 L635.3,516.4688 L635.3,516.8438 L635.3,517.2188 L634.7844,517.8438 L634.7844,517.8438 L634.3313,517.8438 L631.9875,525.8438 L629.6125,525.8438 L627.1438,517.8438 L626.8156,517.8438 L626.8156,517.8438 L626.3,517.2188 L626.3,516.8438 L626.3,516.4688 L626.8156,515.8438 L627.3938,515.8438 L629.2688,515.8438 L629.7844,515.8438 L630.3,516.4688 L630.3,516.8438 L630.3,517.2188 L629.7844,517.8438 L629.2688,517.8438 L629.2688,517.8438 L630.8,523.375 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="82" x="643.2" y="517.457">«ValueObject»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="46" x="661.2" y="532.5508">Address</text><line style="stroke:#A80036;stroke-width:1.5;" x1="615" x2="727" y1="540.1875" y2="540.1875"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="102" x="620" y="555.6064">streetNumber : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="620" y="569.4424">zipCode : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="54" x="620" y="583.2783">city : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="74" x="620" y="597.1143">country : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="615" x2="727" y1="603.5313" y2="603.5313"/><!--MD5=[09ce52be0ee7de43c61b6e2d59bf108b]
+class Person--><rect codeLine="63" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="214.0313" id="Person" style="stroke:#A80036;stroke-width:1.5;" width="131" x="352.5" y="157"/><ellipse cx="394.05" cy="173" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M392.55,174 L392.55,176 L396.55,176 L396.55,175 L396.55,174.5156 L397.175,174 L397.55,174 L397.925,174 L398.55,174.5156 L398.55,175 L398.55,178 L390.55,178 L390.0656,178 L389.55,177.375 L389.55,177 L389.55,176.625 L390.0656,176 L390.55,176 L390.55,176 L390.55,170 L390.55,170 L390.0656,170 L389.55,169.375 L389.55,169 L389.55,168.625 L390.0656,168 L390.55,168 L398.55,168 L398.55,171 L398.55,171.4844 L397.925,172 L397.55,172 L397.175,172 L396.55,171.4844 L396.55,171 L396.55,170 L392.55,170 L392.55,172 L393.55,172 L393.55,171.5156 L393.55,171.5156 L394.175,171 L394.55,171 L394.925,171 L395.55,171.5156 L395.55,172 L395.55,174 L395.55,174.4844 L394.925,175 L394.925,175 L394.55,175 L394.175,175 L393.55,174.4844 L393.55,174.4844 L393.55,174 L392.55,174 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="40" x="413.95" y="177.9102">Person</text><line style="stroke:#A80036;stroke-width:1.5;" x1="353.5" x2="482.5" y1="189" y2="189"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="358.5" y="204.4189">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="358.5" y="218.2549">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="83" x="358.5" y="232.0908">firstName : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="81" x="358.5" y="245.9268">lastName : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="358.5" y="259.7627">titleFront : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="358.5" y="273.5986">titleBack : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="96" x="358.5" y="287.4346">birthday : LocalDate</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="76" x="358.5" y="301.2705">mainJob : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="117" x="358.5" y="315.1064">contacts : List&lt;Contact&gt;</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="119" x="358.5" y="328.9424">primaryContact : Contact</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="358.5" y="342.7783">address : Address</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="358.5" y="356.6143">gender : Gender</text><line style="stroke:#A80036;stroke-width:1.5;" x1="353.5" x2="482.5" y1="363.0313" y2="363.0313"/><!--MD5=[de6afb781a47c1562a141b35d54dc633]
+class ContactType--><rect codeLine="78" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="126.625" id="ContactType" style="stroke:#A80036;stroke-width:1.5;" width="128" x="696" y="200.5"/><ellipse cx="723.6" cy="228.1406" fill="#FFAAFA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M723.1,225.1406 L723.1,231.1406 L726.1,231.1406 L726.1,229.1406 L726.1,228.6563 L726.725,228.1406 L727.1,228.1406 L727.475,228.1406 L728.1,228.6563 L728.1,229.1406 L728.1,233.1406 L720.1,233.1406 L719.6156,233.1406 L719.1,232.5156 L719.1,232.1406 L719.1,231.7656 L719.6156,231.1406 L720.1,231.1406 L721.1,231.1406 L721.1,225.1406 L720.1,225.1406 L719.6156,225.1406 L719.1,224.5156 L719.1,224.1406 L719.1,223.7656 L719.6156,223.1406 L720.1,223.1406 L724.1,223.1406 L724.5844,223.1406 L725.1,223.7656 L725.1,224.1406 L725.1,224.5156 L724.5844,225.1406 L724.1,225.1406 L723.1,225.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="752.4" y="217.957">«Entity»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="52" x="748.4" y="233.0508">«lookup»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="68" x="740.4" y="248.1445">ContactType</text><line style="stroke:#A80036;stroke-width:1.5;" x1="697" x2="823" y1="255.7813" y2="255.7813"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="702" y="271.2002">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="702" y="285.0361">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="69" x="702" y="298.8721">means : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="116" x="702" y="312.708">socialNetwork : boolean</text><line style="stroke:#A80036;stroke-width:1.5;" x1="697" x2="823" y1="319.125" y2="319.125"/><!--MD5=[fd4daf81820a1cf383bea092d52f31d7]
+class EventRole--><rect codeLine="85" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="112.7891" id="EventRole" style="stroke:#A80036;stroke-width:1.5;" width="90" x="72" y="207.5"/><ellipse cx="87.9" cy="235.1406" fill="#FFAAFA" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M87.4,232.1406 L87.4,238.1406 L90.4,238.1406 L90.4,236.1406 L90.4,235.6563 L91.025,235.1406 L91.4,235.1406 L91.775,235.1406 L92.4,235.6563 L92.4,236.1406 L92.4,240.1406 L84.4,240.1406 L83.9156,240.1406 L83.4,239.5156 L83.4,239.1406 L83.4,238.7656 L83.9156,238.1406 L84.4,238.1406 L85.4,238.1406 L85.4,232.1406 L84.4,232.1406 L83.9156,232.1406 L83.4,231.5156 L83.4,231.1406 L83.4,230.7656 L83.9156,230.1406 L84.4,230.1406 L88.4,230.1406 L88.8844,230.1406 L89.4,230.7656 L89.4,231.1406 L89.4,231.5156 L88.8844,232.1406 L88.4,232.1406 L87.4,232.1406 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="44" x="108.1" y="224.957">«Entity»</text><text fill="#000000" font-family="sans-serif" font-size="12" font-style="italic" lengthAdjust="spacing" textLength="52" x="104.1" y="240.0508">«lookup»</text><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="56" x="102.1" y="255.1445">EventRole</text><line style="stroke:#A80036;stroke-width:1.5;" x1="73" x2="161" y1="262.7813" y2="262.7813"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="78" y="278.2002">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="78" y="292.0361">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="78" y="305.8721">name : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="73" x2="161" y1="312.2891" y2="312.2891"/><!--MD5=[72ce1314beffbcf60a64ee91fbbc10dc]
+class Contact--><rect codeLine="91" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="117.1797" id="Contact" style="stroke:#A80036;stroke-width:1.5;" width="142" x="519" y="205.5"/><ellipse cx="564.75" cy="221.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M563.25,222.5 L563.25,224.5 L567.25,224.5 L567.25,223.5 L567.25,223.0156 L567.875,222.5 L568.25,222.5 L568.625,222.5 L569.25,223.0156 L569.25,223.5 L569.25,226.5 L561.25,226.5 L560.7656,226.5 L560.25,225.875 L560.25,225.5 L560.25,225.125 L560.7656,224.5 L561.25,224.5 L561.25,224.5 L561.25,218.5 L561.25,218.5 L560.7656,218.5 L560.25,217.875 L560.25,217.5 L560.25,217.125 L560.7656,216.5 L561.25,216.5 L569.25,216.5 L569.25,219.5 L569.25,219.9844 L568.625,220.5 L568.25,220.5 L567.875,220.5 L567.25,219.9844 L567.25,219.5 L567.25,218.5 L563.25,218.5 L563.25,220.5 L564.25,220.5 L564.25,220.0156 L564.25,220.0156 L564.875,219.5 L565.25,219.5 L565.625,219.5 L566.25,220.0156 L566.25,220.5 L566.25,222.5 L566.25,222.9844 L565.625,223.5 L565.625,223.5 L565.25,223.5 L564.875,223.5 L564.25,222.9844 L564.25,222.9844 L564.25,222.5 L563.25,222.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="42" x="585.25" y="226.4102">Contact</text><line style="stroke:#A80036;stroke-width:1.5;" x1="520" x2="660" y1="237.5" y2="237.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="525" y="252.9189">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="525" y="266.7549">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="525" y="280.5908">value : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="130" x="525" y="294.4268">contactType : ContactType</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="91" x="525" y="308.2627">business : boolean</text><line style="stroke:#A80036;stroke-width:1.5;" x1="520" x2="660" y1="314.6797" y2="314.6797"/><!--MD5=[0dc5e3e61f53b814ab6be8404f5bd344]
+class EventParticipant--><rect codeLine="99" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="144.8516" id="EventParticipant" style="stroke:#A80036;stroke-width:1.5;" width="120" x="197" y="191.5"/><ellipse cx="212" cy="207.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M210.5,208.5 L210.5,210.5 L214.5,210.5 L214.5,209.5 L214.5,209.0156 L215.125,208.5 L215.5,208.5 L215.875,208.5 L216.5,209.0156 L216.5,209.5 L216.5,212.5 L208.5,212.5 L208.0156,212.5 L207.5,211.875 L207.5,211.5 L207.5,211.125 L208.0156,210.5 L208.5,210.5 L208.5,210.5 L208.5,204.5 L208.5,204.5 L208.0156,204.5 L207.5,203.875 L207.5,203.5 L207.5,203.125 L208.0156,202.5 L208.5,202.5 L216.5,202.5 L216.5,205.5 L216.5,205.9844 L215.875,206.5 L215.5,206.5 L215.125,206.5 L214.5,205.9844 L214.5,205.5 L214.5,204.5 L210.5,204.5 L210.5,206.5 L211.5,206.5 L211.5,206.0156 L211.5,206.0156 L212.125,205.5 L212.5,205.5 L212.875,205.5 L213.5,206.0156 L213.5,206.5 L213.5,208.5 L213.5,208.9844 L212.875,209.5 L212.875,209.5 L212.5,209.5 L212.125,209.5 L211.5,208.9844 L211.5,208.9844 L211.5,208.5 L210.5,208.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="88" x="226" y="212.4102">EventParticipant</text><line style="stroke:#A80036;stroke-width:1.5;" x1="198" x2="316" y1="223.5" y2="223.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="203" y="238.9189">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="203" y="252.7549">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="77" x="203" y="266.5908">person : Person</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="75" x="203" y="280.4268">role : EventRole</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="67" x="203" y="294.2627">paid : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="82" x="203" y="308.0986">internal : boolean</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="203" y="321.9346">event : Event</text><line style="stroke:#A80036;stroke-width:1.5;" x1="198" x2="316" y1="328.3516" y2="328.3516"/><!--MD5=[8e7e20def8b3874aa35de8a636c629c4]
+class TimeSlot--><rect codeLine="109" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="144.8516" id="TimeSlot" style="stroke:#A80036;stroke-width:1.5;" width="113" x="297.5" y="741"/><ellipse cx="326.9" cy="757" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M325.4,758 L325.4,760 L329.4,760 L329.4,759 L329.4,758.5156 L330.025,758 L330.4,758 L330.775,758 L331.4,758.5156 L331.4,759 L331.4,762 L323.4,762 L322.9156,762 L322.4,761.375 L322.4,761 L322.4,760.625 L322.9156,760 L323.4,760 L323.4,760 L323.4,754 L323.4,754 L322.9156,754 L322.4,753.375 L322.4,753 L322.4,752.625 L322.9156,752 L323.4,752 L331.4,752 L331.4,755 L331.4,755.4844 L330.775,756 L330.4,756 L330.025,756 L329.4,755.4844 L329.4,755 L329.4,754 L325.4,754 L325.4,756 L326.4,756 L326.4,755.5156 L326.4,755.5156 L327.025,755 L327.4,755 L327.775,755 L328.4,755.5156 L328.4,756 L328.4,758 L328.4,758.4844 L327.775,759 L327.775,759 L327.4,759 L327.025,759 L326.4,758.4844 L326.4,758.4844 L326.4,758 L325.4,758 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="49" x="344.1" y="761.9102">TimeSlot</text><line style="stroke:#A80036;stroke-width:1.5;" x1="298.5" x2="409.5" y1="773" y2="773"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="303.5" y="788.4189">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="303.5" y="802.2549">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="101" x="303.5" y="816.0908">from : LocalDateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="98" x="303.5" y="829.9268">until : LocalDateTime</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="303.5" y="843.7627">name : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="303.5" y="857.5986">description : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="79" x="303.5" y="871.4346">contact : Person</text><line style="stroke:#A80036;stroke-width:1.5;" x1="298.5" x2="409.5" y1="877.8516" y2="877.8516"/><!--MD5=[39d6d2ea03de602dbf4d534e70c872a9]
+class Tag--><rect codeLine="119" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="103.3438" id="Tag" style="stroke:#A80036;stroke-width:1.5;" width="102" x="22" y="504.5"/><ellipse cx="59.05" cy="520.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M57.55,521.5 L57.55,523.5 L61.55,523.5 L61.55,522.5 L61.55,522.0156 L62.175,521.5 L62.55,521.5 L62.925,521.5 L63.55,522.0156 L63.55,522.5 L63.55,525.5 L55.55,525.5 L55.0656,525.5 L54.55,524.875 L54.55,524.5 L54.55,524.125 L55.0656,523.5 L55.55,523.5 L55.55,523.5 L55.55,517.5 L55.55,517.5 L55.0656,517.5 L54.55,516.875 L54.55,516.5 L54.55,516.125 L55.0656,515.5 L55.55,515.5 L63.55,515.5 L63.55,518.5 L63.55,518.9844 L62.925,519.5 L62.55,519.5 L62.175,519.5 L61.55,518.9844 L61.55,518.5 L61.55,517.5 L57.55,517.5 L57.55,519.5 L58.55,519.5 L58.55,519.0156 L58.55,519.0156 L59.175,518.5 L59.55,518.5 L59.925,518.5 L60.55,519.0156 L60.55,519.5 L60.55,521.5 L60.55,521.9844 L59.925,522.5 L59.925,522.5 L59.55,522.5 L59.175,522.5 L58.55,521.9844 L58.55,521.9844 L58.55,521.5 L57.55,521.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="21" x="77.95" y="525.4102">Tag</text><line style="stroke:#A80036;stroke-width:1.5;" x1="23" x2="123" y1="536.5" y2="536.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="41" x="28" y="551.9189">id : Long</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="78" x="28" y="565.7549">version : Integer</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="28" y="579.5908">name : String</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="90" x="28" y="593.4268">description : String</text><line style="stroke:#A80036;stroke-width:1.5;" x1="23" x2="123" y1="599.8438" y2="599.8438"/><!--MD5=[b861aea2be705f24b0519c57db2c3a90]
+class EventHasTag--><rect codeLine="126" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="89.5078" id="EventHasTag" style="stroke:#A80036;stroke-width:1.5;" width="132" x="7" y="768.5"/><ellipse cx="33.7" cy="784.5" fill="#ADD1B2" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M32.2,785.5 L32.2,787.5 L36.2,787.5 L36.2,786.5 L36.2,786.0156 L36.825,785.5 L37.2,785.5 L37.575,785.5 L38.2,786.0156 L38.2,786.5 L38.2,789.5 L30.2,789.5 L29.7156,789.5 L29.2,788.875 L29.2,788.5 L29.2,788.125 L29.7156,787.5 L30.2,787.5 L30.2,787.5 L30.2,781.5 L30.2,781.5 L29.7156,781.5 L29.2,780.875 L29.2,780.5 L29.2,780.125 L29.7156,779.5 L30.2,779.5 L38.2,779.5 L38.2,782.5 L38.2,782.9844 L37.575,783.5 L37.2,783.5 L36.825,783.5 L36.2,782.9844 L36.2,782.5 L36.2,781.5 L32.2,781.5 L32.2,783.5 L33.2,783.5 L33.2,783.0156 L33.2,783.0156 L33.825,782.5 L34.2,782.5 L34.575,782.5 L35.2,783.0156 L35.2,783.5 L35.2,785.5 L35.2,785.9844 L34.575,786.5 L34.575,786.5 L34.2,786.5 L33.825,786.5 L33.2,785.9844 L33.2,785.9844 L33.2,785.5 L32.2,785.5 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="74" x="50.3" y="789.4102">EventHasTag</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="138" y1="800.5" y2="800.5"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="63" x="13" y="815.9189">event : Event</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="42" x="13" y="829.7549">tag : Tag</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="120" x="13" y="843.5908">addedAt : LocalDateTime</text><line style="stroke:#A80036;stroke-width:1.5;" x1="8" x2="138" y1="850.0078" y2="850.0078"/><!--MD5=[a4ea2dcb44ebd57046df9af95d8b8c12]
+class Gender--><rect codeLine="132" fill="#FEFECE" filter="url(#f9ur0kov832ea)" height="89.5078" id="Gender" style="stroke:#A80036;stroke-width:1.5;" width="73" x="381.5" y="7"/><ellipse cx="396.5" cy="23" fill="#EB937F" rx="11" ry="11" style="stroke:#A80036;stroke-width:1.0;"/><path d="M395,24 L395,26 L399,26 L399,25 L399,24.5156 L399.625,24 L400,24 L400.375,24 L401,24.5156 L401,25 L401,28 L393,28 L392.5156,28 L392,27.375 L392,27 L392,26.625 L392.5156,26 L393,26 L393,26 L393,20 L393,20 L392.5156,20 L392,19.375 L392,19 L392,18.625 L392.5156,18 L393,18 L401,18 L401,21 L401,21.4844 L400.375,22 L400,22 L399.625,22 L399,21.4844 L399,21 L399,20 L395,20 L395,22 L396,22 L396,21.5156 L396,21.5156 L396.625,21 L397,21 L397.375,21 L398,21.5156 L398,22 L398,24 L398,24.4844 L397.375,25 L397.375,25 L397,25 L396.625,25 L396,24.4844 L396,24.4844 L396,24 L395,24 Z " fill="#000000"/><text fill="#000000" font-family="sans-serif" font-size="12" lengthAdjust="spacing" textLength="41" x="410.5" y="27.9102">Gender</text><line style="stroke:#A80036;stroke-width:1.5;" x1="382.5" x2="453.5" y1="39" y2="39"/><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="28" x="387.5" y="54.4189">MALE</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="40" x="387.5" y="68.2549">FEMALE</text><text fill="#000000" font-family="sans-serif" font-size="11" lengthAdjust="spacing" textLength="34" x="387.5" y="82.0908">OTHER</text><line style="stroke:#A80036;stroke-width:1.5;" x1="382.5" x2="453.5" y1="88.5078" y2="88.5078"/><!--MD5=[b3fc5bddf51493bd598b6856aed93769]
+link EventParticipant to Event--><path codeLine="138" d="M257,336.69 C257,371.12 257,413.03 257,450.9 " fill="none" id="EventParticipant-to-Event" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="257,455.97,261,446.97,257,450.97,253,446.97,257,455.97" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9c0df85f46872af3a9dab24904afc5ac]
+reverse link Event to EventHasTag--><path codeLine="139" d="M192.43,646.66 C162.73,687.9 128.84,734.96 104.76,768.39 " fill="none" id="Event-backto-EventHasTag" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="195.47,642.43,186.9707,647.4061,192.553,646.4909,193.4681,652.0733,195.47,642.43" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8ce072d1e8c58f0609e22ea38fe0d704]
+reverse link Tag to EventHasTag--><path codeLine="140" d="M73,612.81 C73,659.46 73,725.1 73,768.21 " fill="none" id="Tag-backto-EventHasTag" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="73,607.78,69,616.78,73,612.78,77,616.78,73,607.78" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[3b9d5a25bc571fd9b956a885fc0854e6]
+reverse link Event to TimeSlot--><path codeLine="141" d="M299.32,668.48 C308.62,692.98 318.23,718.29 326.75,740.73 " fill="none" id="Event-backto-TimeSlot" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="294.64,656.15,293.0294,663.1789,298.8982,667.3691,300.5088,660.3401,294.64,656.15" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="290.1472" y="677.5931">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="300.8055" y="729.9215">0..n</text><!--MD5=[515c8a56a8381999efcb2376de3fd02e]
+link Event to Location--><path codeLine="142" d="M318.73,556 C352.62,556 386.51,556 420.4,556 " fill="none" id="Event-to-Location" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="425.4,556,416.4,552,420.4,556,416.4,560,425.4,556" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b435d1a722045c709b124c89654a6513]
+link Event to EventType--><path codeLine="143" d="M241.87,656.15 C236.26,692.88 230.14,732.93 225.51,763.31 " fill="none" id="Event-to-EventType" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="224.72,768.48,230.0366,760.1894,225.4771,763.5376,222.1288,758.9781,224.72,768.48" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[8f166f6c1759598e57e8c2dcc2a3009a]
+link Location to Address--><path codeLine="144" d="M578.58,556 C590.37,556 602.16,556 613.96,556 " fill="none" id="Location-Address" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[a2af13000ffef141c42feff91d4940e5]
+link EventParticipant to Person--><path codeLine="145" d="M317.06,264 C327.02,264 336.98,264 346.94,264 " fill="none" id="EventParticipant-to-Person" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="352.15,264,343.15,260,347.15,264,343.15,268,352.15,264" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[0ebc9204e22a32d7982375dfc5b8ad4a]
+reverse link EventRole to EventParticipant--><path codeLine="146" d="M167.29,264 C177.18,264 187.07,264 196.96,264 " fill="none" id="EventRole-backto-EventParticipant" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="162.12,264,171.12,268,167.12,264,171.12,260,162.12,264" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e2754dcea895d5ebdde6a9ef13d8170c]
+reverse link Person to Event--><path codeLine="147" d="M356.44,375.89 C341.82,402.22 326.32,430.14 312.02,455.9 " fill="none" id="Person-backto-Event" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="358.96,371.34,351.0926,377.2648,356.5318,375.7108,358.0858,381.15,358.96,371.34" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[7bb0b527e5e48b96aa124381ac8dea5a]
+link Contact to ContactType--><path codeLine="149" d="M661.05,264 C670.93,264 680.8,264 690.68,264 " fill="none" id="Contact-to-ContactType" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="695.84,264,686.84,260,690.84,264,686.84,268,695.84,264" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[307dcb93833c07b614b773f7fc918b18]
+link Person to Contact--><path codeLine="150" d="M483.51,339.69 C503.87,348.75 524.24,344.31 544.6,326.37 " fill="none" id="Person-to-Contact" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="548.4,322.86,539.0721,326.0208,544.7243,326.2496,544.4955,331.9018,548.4,322.86" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[19dbd5dadb5c033a613348ca2c530a29]
+reverse link Person to Contact--><path codeLine="151" d="M495.93,184.46 C513.42,181.39 530.91,188.29 548.4,205.14 " fill="none" id="Person-backto-Contact" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="483.51,188.31,490.4245,190.3569,494.9733,184.7615,488.0588,182.7146,483.51,188.31" style="stroke:#A80036;stroke-width:1.0;"/><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="7" x="491.4893" y="176.147">1</text><text fill="#000000" font-family="sans-serif" font-size="13" lengthAdjust="spacing" textLength="22" x="519.9894" y="194.497">0..n</text><!--MD5=[70428f36580037ddc264bdbb1c3788c6]
+reverse link Gender to Person--><path codeLine="153" d="M418,102.05 C418,118.53 418,137.6 418,156.73 " fill="none" id="Gender-backto-Person" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="418,97.02,414,106.02,418,102.02,422,106.02,418,97.02" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[b73c16dcbb300cfcfb8ac7b75475c389]
+link Person to Address--><path codeLine="154" d="M483.58,352.75 C489.56,359.17 495.73,365.34 502,371 C538.79,404.21 561.38,395.53 596,431 C615.51,450.98 632.2,476.95 644.85,499.95 " fill="none" id="Person-Address" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[9f2812cb50d7d24b8d96acd4b524b0b4]
+reverse link Person to TimeSlot--><path codeLine="155" d="M404.98,376.36 C392.26,485.23 373.26,647.77 362.4,740.61 " fill="none" id="Person-backto-TimeSlot" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="405.58,371.21,400.5757,379.6927,405.0074,376.1771,408.523,380.6089,405.58,371.21" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[e355232f596e2dc64e2d18d2396299aa]
+reverse link Person to Location--><path codeLine="156" d="M450.26,376.36 C455.43,394.24 460.82,412.84 466.08,430.99 " fill="none" id="Person-backto-Location" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="#A80036" points="448.8,371.34,447.48,381.1,450.2,376.14,455.16,378.86,448.8,371.34" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[53d77cd84b576b3754d11f13e06fa65f]
+reverse link Location to IndoorLocation--><path codeLine="158" d="M591.07,673.31 C593.07,675.9 595.04,678.46 597,681 C616.32,706.06 637.77,733.74 656,757.21 " fill="none" id="Location-backto-IndoorLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="585.33,677.32,578.69,657.2,596.43,668.79,585.33,677.32" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[87fb636fa834ab0ea3284e3ba25246bd]
+reverse link Location to OutdoorLocation--><path codeLine="159" d="M512.16,701.18 C513.39,718.61 514.58,735.62 515.66,750.89 " fill="none" id="Location-backto-OutdoorLocation" style="stroke:#A80036;stroke-width:1.0;"/><polygon fill="none" points="505.16,701.45,510.74,681.01,519.12,700.47,505.16,701.45" style="stroke:#A80036;stroke-width:1.0;"/><!--MD5=[977157c9359b6f1dd98f71505dd0b674]
+@startuml
+'https://plantuml.com/class-diagram
+
+entity Event {
+    id : Long
+    version : Integer
+    name : String
+    startDate : LocalDate
+    endDate : LocalDate
+    eventType : EventType
+    wasHold : boolean
+    organizer : Person
+    location: Location
+    agenda: List<TimeSlot>
+    luxury : boolean
+}
+
+enum EventType {
+    PARTY
+    CONFERENCE
+    TALK
+}
+
+abstract class Location <<Entity>> {
+    id : Long
+    version : Integer
+    address : Address
+    owner : Person
+    squareMeters : Integer
+    maxPeople : Integer
+    numOfToilets : Integer
+    numOfBars : Integer
+    maxDezibel : Integer
+    numOfParkingPlaces : Integer
+    opensAt : LocalTime
+    endsAt : LocalTime
+    description : String
+    name : String
+}
+
+class IndoorLocation <<Entity>> {
+    numOfFloors : Integer
+    numOfEntrances : Integer
+    numOfReceptions : Integer
+    numOfRooms : Integer
+}
+
+class OutdoorLocation <<Entity>> {
+    weatherSafe : boolean
+    hasPool : boolean
+    hasCampFirePlace : boolean
+    hasOutdoorStage : boolean
+    numOfPlaces : Integer
+}
+
+
+class Address <<(V,#FF7700) ValueObject>> {
+    streetNumber : String
+    zipCode : String
+    city : String
+    country : String
+}
+
+entity Person {
+    id : Long
+    version : Integer
+    firstName : String
+    lastName : String
+    titleFront : String
+    titleBack : String
+    birthday : LocalDate
+    mainJob : String
+    contacts : List<Contact>
+    primaryContact : Contact
+    address : Address
+    gender : Gender
+}
+
+enum ContactType <<Entity>> <<(L,#FFAAFA) lookup>> {
+    id : Long
+    version : Integer
+    means : String
+    socialNetwork : boolean
+}
+
+entity EventRole <<Entity>> <<(L,#FFAAFA) lookup>> {
+    id : Long
+    version : Integer
+    name : String
+}
+
+entity Contact {
+    id : Long
+    version : Integer
+    value : String
+    contactType : ContactType
+    business : boolean
+}
+
+entity EventParticipant {
+    id : Long
+    version : Integer
+    person : Person
+    role : EventRole
+    paid : boolean
+    internal : boolean
+    event : Event
+}
+
+entity TimeSlot {
+    id : Long
+    version : Integer
+    from : LocalDateTime
+    until : LocalDateTime
+    name : String
+    description : String
+    contact : Person
+}
+
+entity Tag {
+    id : Long
+    version : Integer
+    name : String
+    description : String
+}
+
+entity EventHasTag {
+    event : Event
+    tag : Tag
+    addedAt : LocalDateTime
+}
+
+enum Gender {
+    MALE
+    FEMALE
+    OTHER
+}
+
+Event <-left- EventParticipant
+Event <-down- EventHasTag
+EventHasTag -up-> Tag
+Event "1" *-down- "0..n" TimeSlot
+Event -right-> Location
+Event -down-> EventType
+Location -right- Address
+EventParticipant -right-> Person
+EventParticipant -left-> EventRole
+Event -up-> Person
+
+Contact -right-> ContactType
+Contact <-left- Person
+Contact "0..n" -left-* "1" Person
+
+Person -up-> Gender
+Person - - Address
+TimeSlot -up-> Person
+Location -up-> Person
+
+IndoorLocation - -up|> Location
+OutdoorLocation - -up|> Location
+
+
+@enduml
+
+@startuml
+
+entity Event {
+    id : Long
+    version : Integer
+    name : String
+    startDate : LocalDate
+    endDate : LocalDate
+    eventType : EventType
+    wasHold : boolean
+    organizer : Person
+    location: Location
+    agenda: List<TimeSlot>
+    luxury : boolean
+}
+
+enum EventType {
+    PARTY
+    CONFERENCE
+    TALK
+}
+
+abstract class Location <<Entity>> {
+    id : Long
+    version : Integer
+    address : Address
+    owner : Person
+    squareMeters : Integer
+    maxPeople : Integer
+    numOfToilets : Integer
+    numOfBars : Integer
+    maxDezibel : Integer
+    numOfParkingPlaces : Integer
+    opensAt : LocalTime
+    endsAt : LocalTime
+    description : String
+    name : String
+}
+
+class IndoorLocation <<Entity>> {
+    numOfFloors : Integer
+    numOfEntrances : Integer
+    numOfReceptions : Integer
+    numOfRooms : Integer
+}
+
+class OutdoorLocation <<Entity>> {
+    weatherSafe : boolean
+    hasPool : boolean
+    hasCampFirePlace : boolean
+    hasOutdoorStage : boolean
+    numOfPlaces : Integer
+}
+
+
+class Address <<(V,#FF7700) ValueObject>> {
+    streetNumber : String
+    zipCode : String
+    city : String
+    country : String
+}
+
+entity Person {
+    id : Long
+    version : Integer
+    firstName : String
+    lastName : String
+    titleFront : String
+    titleBack : String
+    birthday : LocalDate
+    mainJob : String
+    contacts : List<Contact>
+    primaryContact : Contact
+    address : Address
+    gender : Gender
+}
+
+enum ContactType <<Entity>> <<(L,#FFAAFA) lookup>> {
+    id : Long
+    version : Integer
+    means : String
+    socialNetwork : boolean
+}
+
+entity EventRole <<Entity>> <<(L,#FFAAFA) lookup>> {
+    id : Long
+    version : Integer
+    name : String
+}
+
+entity Contact {
+    id : Long
+    version : Integer
+    value : String
+    contactType : ContactType
+    business : boolean
+}
+
+entity EventParticipant {
+    id : Long
+    version : Integer
+    person : Person
+    role : EventRole
+    paid : boolean
+    internal : boolean
+    event : Event
+}
+
+entity TimeSlot {
+    id : Long
+    version : Integer
+    from : LocalDateTime
+    until : LocalDateTime
+    name : String
+    description : String
+    contact : Person
+}
+
+entity Tag {
+    id : Long
+    version : Integer
+    name : String
+    description : String
+}
+
+entity EventHasTag {
+    event : Event
+    tag : Tag
+    addedAt : LocalDateTime
+}
+
+enum Gender {
+    MALE
+    FEMALE
+    OTHER
+}
+
+Event <-left- EventParticipant
+Event <-down- EventHasTag
+EventHasTag -up-> Tag
+Event "1" *-down- "0..n" TimeSlot
+Event -right-> Location
+Event -down-> EventType
+Location -right- Address
+EventParticipant -right-> Person
+EventParticipant -left-> EventRole
+Event -up-> Person
+
+Contact -right-> ContactType
+Contact <-left- Person
+Contact "0..n" -left-* "1" Person
+
+Person -up-> Gender
+Person - - Address
+TimeSlot -up-> Person
+Location -up-> Person
+
+IndoorLocation - -up|> Location
+OutdoorLocation - -up|> Location
+
+
+@enduml
+
+PlantUML version 1.2021.11(Sat Oct 02 15:26:11 CEST 2021)
+(GPL source distribution)
+Java Runtime: OpenJDK Runtime Environment
+JVM: OpenJDK 64-Bit Server VM
+Default Encoding: Cp1252
+Language: en
+Country: GB
+--></g></svg>

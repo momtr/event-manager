@@ -1,0 +1,47 @@
+GET http://localhost:8080/api/v1/contacts?person_token=2imIbQzX
+###
+
+GET http://localhost:8080/api/v1/contacts/6zP3mnk1
+###
+
+POST http://localhost:8080/api/v1/contacts/primary?person_token=mK7YRauK
+Content-Type: application/json
+Accept: application/json
+
+{
+  "contactType": "email",
+  "contactTypeIsSocialNetwork": true,
+  "address": "mitterdorfer.moritz@gmail.com",
+  "isBusiness": true
+}
+###
+
+POST http://localhost:8080/api/v1/contacts?person_token=kmnyiaeZ
+Content-Type: application/json
+Accept: application/json
+
+{
+  "contactType": "instagram",
+  "contactTypeIsSocialNetwork": true,
+  "address": "moooooooooo",
+  "isBusiness": true
+}
+###
+
+PATCH http://localhost:8080/api/v1/contacts/4XBgPeGS
+Content-Type: application/json
+Accept: application/json
+
+{
+  "address": "flloooooo"
+}
+###
+
+DELETE http://localhost:8080/api/v1/contacts/primary?person_token=kmnyiaeZ
+###
+
+DELETE http://localhost:8080/api/v1/contacts?person_token=kmnyiaeZ
+###
+
+DELETE http://localhost:8080/api/v1/contacts/um5HIiS7?person_token=kmnyiaeZ
+###

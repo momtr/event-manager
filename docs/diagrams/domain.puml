@@ -1,0 +1,165 @@
+@startuml
+'https://plantuml.com/class-diagram
+
+entity Event {
+    id : Long
+    version : Integer
+    name : String
+    startDate : LocalDate
+    endDate : LocalDate
+    eventType : EventType
+    wasHold : boolean
+    organizer : Person
+    location: Location
+    agenda: List<TimeSlot>
+    luxury : boolean
+}
+
+enum EventType {
+    PARTY
+    CONFERENCE
+    TALK
+}
+
+abstract class Location <<Entity>> {
+    id : Long
+    version : Integer
+    address : Address
+    owner : Person
+    squareMeters : Integer
+    maxPeople : Integer
+    numOfToilets : Integer
+    numOfBars : Integer
+    maxDezibel : Integer
+    numOfParkingPlaces : Integer
+    opensAt : LocalTime
+    endsAt : LocalTime
+    description : String
+    name : String
+}
+
+class IndoorLocation <<Entity>> {
+    numOfFloors : Integer
+    numOfEntrances : Integer
+    numOfReceptions : Integer
+    numOfRooms : Integer
+}
+
+class OutdoorLocation <<Entity>> {
+    weatherSafe : boolean
+    hasPool : boolean
+    hasCampFirePlace : boolean
+    hasOutdoorStage : boolean
+    numOfPlaces : Integer
+}
+
+
+class Address <<(V,#FF7700) ValueObject>> {
+    streetNumber : String
+    zipCode : String
+    city : String
+    country : String
+}
+
+entity Person {
+    id : Long
+    version : Integer
+    firstName : String
+    lastName : String
+    titleFront : String
+    titleBack : String
+    birthday : LocalDate
+    mainJob : String
+    contacts : List<Contact>
+    primaryContact : Contact
+    address : Address
+    gender : Gender
+}
+
+enum ContactType <<Entity>> <<(L,#FFAAFA) lookup>> {
+    id : Long
+    version : Integer
+    means : String
+    socialNetwork : boolean
+}
+
+entity EventRole <<Entity>> <<(L,#FFAAFA) lookup>> {
+    id : Long
+    version : Integer
+    name : String
+}
+
+entity Contact {
+    id : Long
+    version : Integer
+    value : String
+    contactType : ContactType
+    business : boolean
+}
+
+entity EventParticipant {
+    id : Long
+    version : Integer
+    person : Person
+    role : EventRole
+    paid : boolean
+    internal : boolean
+    event : Event
+}
+
+entity TimeSlot {
+    id : Long
+    version : Integer
+    from : LocalDateTime
+    until : LocalDateTime
+    name : String
+    description : String
+    contact : Person
+}
+
+entity Tag {
+    id : Long
+    version : Integer
+    name : String
+    description : String
+}
+
+entity EventHasTag {
+    event : Event
+    tag : Tag
+    addedAt : LocalDateTime
+}
+
+enum Gender {
+    MALE
+    FEMALE
+    OTHER
+}
+
+Event <-left- EventParticipant
+Event <-down- EventHasTag
+EventHasTag -up-> Tag
+Event "1" *-down- "0..n" TimeSlot
+Event -right-> Location
+Event -down-> EventType
+Location -right- Address
+EventParticipant -right-> Person
+EventParticipant -left-> EventRole
+Event -up-> Person
+
+Contact -right-> ContactType
+Contact <-left- Person
+Contact "0..n" -left-* "1" Person
+
+Person -up-> Gender
+Person -- Address
+TimeSlot -up-> Person
+Location -up-> Person
+
+IndoorLocation --up|> Location
+OutdoorLocation --up|> Location
+
+
+@enduml
+
+

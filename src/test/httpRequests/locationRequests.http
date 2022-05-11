@@ -1,0 +1,67 @@
+POST http://localhost:8080/api/v1/locations
+Content-Type: application/json
+
+{
+  "locationType": "INDOOR_LOCATION",
+  "squareMeters": 100,
+  "numOfToilets": 2,
+  "numOfBars": 2,
+  "maxDezibel": 50,
+  "numOfParkingPlaces": 10,
+  "opensAt": "15:40",
+  "endsAt": "23:00",
+  "name": "HTL Spengergasse",
+  "streetNumber": "Spengergasse 1",
+  "zipCode": "1050",
+  "city": "Wien",
+  "country": "Österreich",
+  "numOfFloors": 3,
+  "numOfEntrances": 1,
+  "numOfReceptions": 1,
+  "numOfRomms": 15
+}
+
+> {%
+    client.global.set("location_token", response.body._token);
+ %}
+
+###
+
+GET http://localhost:8080/api/v1/locations
+
+###
+
+PUT http://localhost:8080/api/v1/locations/{{ location_token }}
+Content-Type: application/json
+
+{
+  "locationType": "INDOOR_LOCATION",
+  "squareMeters": 1,
+  "numOfToilets": 1,
+  "numOfBars": 1,
+  "maxDezibel": 1,
+  "numOfParkingPlaces": 1,
+  "opensAt": "15:40",
+  "endsAt": "15:41",
+  "name": "Minimal Location",
+  "streetNumber": "Spengergasse 1",
+  "zipCode": "1050",
+  "city": "Wien",
+  "country": "Österreich",
+  "numOfFloors": 1,
+  "numOfEntrances": 1,
+  "numOfReceptions": 1,
+  "numOfRomms": 1
+}
+
+###
+
+GET http://localhost:8080/api/v1/locations/{{ location_token }}
+
+###
+
+DELETE http://localhost:8080/api/v1/locations/{{ location_token }}
+
+###
+
+DELETE http://localhost:8080/api/v1/locations
